@@ -26,6 +26,8 @@ git clone link del repository
 <!-- 4.PARA VER SI HAY ALGO NUEVO ANTES DE DESCARAGAR -->
 git fetch
 git status
+<!-- 5.PARA VERIFICAR SI TENGO EL REPOSITORIO ALIADO A GITHUB -->
+git remote -v
 _____________________________________________________________________________________________
 CLASE 24/11/2025
 TEMA(CLASES)
