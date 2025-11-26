@@ -15,8 +15,8 @@ GIT:
 git init
 git add .
 git commit -m "mensaje"
-git push origin main
-git
+git push origin master
+
 <!-- 2.PARA DESCARGAR LOS CAMBIOS: -->
 git pull origin main
 
@@ -28,7 +28,25 @@ git fetch
 git status
 <!-- 5.PARA VERIFICAR SI TENGO EL REPOSITORIO ALIADO A GITHUB -->
 git remote -v
-_____________________________________________________________________________________________
+<!-- 6.ES PARA MIRAR EN QUE CARPETA ESTOY -->
+ls
+<!-- 7.ESTO ES PARA CAMBIAR DE CARPETAS -->
+CD
+<!-- 8.PARA CAMBIARDE RAMA MASTER A MAIN O VISEBERSA -->
+git switch main o master
+<!-- 9.PARA CREAR UNA RAMA -->
+git checkout -b nombredelarama
+<!-- 10.PARA SABER EN QUE RAMA ESTOY -->
+git branch
+<!-- 11.PARA SUBIR DESDE 0 A UN NUEVO REPOSITORY LOS PASOS SON -->
+git init
+git remote add origin LINK DEL REPOSITORY
+git remote -v // para saber si quedo bien
+git status //para saber que hay para subir
+git add .
+git commit -m "comentario"
+git push -u origin main
+____________________________________________________________________________________________
 CLASE 24/11/2025
 TEMA(CLASES)
 1.para que sirve el constructor sirve para crear los onjetos y pone las reglas del tipo de informacion que va a recibir
@@ -38,3 +56,5 @@ TEMA(CLASES)
 TEMA(HERENCIA)
 1.en las herencias de las clases solo se hereda los atribustos y metodos mas no hereda el constructor
 ________________________________________________________________________________________________
+CLASE 25/11/2025
+1.dentro de gitignore se pone lo que no quiero suvir a mi repository

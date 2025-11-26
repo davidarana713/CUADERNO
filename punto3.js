@@ -12,8 +12,8 @@ const operacion = numero % 5 == 0;
 
 if(operacion){
     console.log("EL NUMERO" + numero + "ES MULTIPLO DE 5");
-};
+}
 
-else (
+else {
     console.log("EL NUMERO " + numero + "NO ES MULTIPLO DE 5" );
-);
+};
