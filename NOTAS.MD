@@ -45,7 +45,7 @@ git remote -v // para saber si quedo bien
 git status //para saber que hay para subir
 git add .
 git commit -m "comentario"
-git push -u origin main
+git push -u origin main 
 ____________________________________________________________________________________________
 CLASE 24/11/2025
 TEMA(CLASES)
