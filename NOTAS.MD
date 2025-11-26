@@ -1,4 +1,4 @@
-<!-- como desarrollar un problema -->
+COMO DESARROLLAR UN PROBLEMA:  
 
 <!-- paso 1 -->
 cuales son los valores de entrada o informacion que se va a  digitar por el usuario
