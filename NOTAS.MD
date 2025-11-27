@@ -58,3 +58,8 @@ TEMA(HERENCIA)
 ________________________________________________________________________________________________
 CLASE 25/11/2025
 1.dentro de gitignore se pone lo que no quiero suvir a mi repository
+_______________________________________________________________________
+CLASE 26/11/2025
+1.que es un end point
+2.que es un middlwres:hace referencia en la mitad de 2 acciones como por ejemplo la entrada de un trasmi entre estar andentro o afuera esto si fuera un middlewares que tengan bloqueo 
+3.que es una clase en js
