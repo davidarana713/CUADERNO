@@ -47,6 +47,12 @@ git add .
 git commit -m "comentario"
 git push -u origin main 
 ____________________________________________________________________________________________
+<!-- LISTA DE DESEOS -->
+1.aprender sobre licencias
+2.aprender expreciones regulares
+
+
+____________________________________________________________________________________________
 CLASE 24/11/2025
 TEMA(CLASES)
 1.para que sirve el constructor sirve para crear los onjetos y pone las reglas del tipo de informacion que va a recibir
@@ -63,3 +69,6 @@ CLASE 26/11/2025
 1.que es un end point
 2.que es un middlwres:hace referencia en la mitad de 2 acciones como por ejemplo la entrada de un trasmi entre estar andentro o afuera esto si fuera un middlewares que tengan bloqueo 
 3.que es una clase en js
+_____________________________________________________________________________________
+CLASE 01/12/2025
+1.
