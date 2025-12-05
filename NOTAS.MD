@@ -46,12 +46,26 @@ git status //para saber que hay para subir
 git add .
 git commit -m "comentario"
 git push -u origin main 
+___________________________________________________________________________________________
+<!-- COMO INICIAR UN PROYECTO BAKEND -->
+1.crea el directorio del proyecto
+  mkdir mi-proyecto (comando para la terminal de git bash)
+2.ingresa al directorio
+  cd mi-proyecto
+3.inicializa un proyecto usando npm (dentro del directorio del proyecto)
+  npm init 
+4.inicializar git (seguimiento a los cambios)
+   git init
+5.agregar archivo .gitignore (lista negra: archivos que NO se van a subir a GitHub)
+6.crea un archivo llamado index.js en el directorio src/
+7.instala express con (npm i express) en la consola
+8.instala mongoose con (npm i mongoose) en la consola
+9.crea la configuracion de la base de datos usando mongoose (config/mongo.config.js) - OJO: Ver la configuracion en la pagina oficial
+10.invoca la configuracion de la base de datos en el archivo index.js
 ____________________________________________________________________________________________
 <!-- LISTA DE DESEOS -->
 1.aprender sobre licencias
 2.aprender expreciones regulares
-
-
 ____________________________________________________________________________________________
 CLASE 24/11/2025
 TEMA(CLASES)
@@ -70,5 +84,5 @@ CLASE 26/11/2025
 2.que es un middlwres:hace referencia en la mitad de 2 acciones como por ejemplo la entrada de un trasmi entre estar andentro o afuera esto si fuera un middlewares que tengan bloqueo 
 3.que es una clase en js
 _____________________________________________________________________________________
-CLASE 01/12/2025
+CLASE 02/12/2025
 1.
