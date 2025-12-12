@@ -62,7 +62,33 @@ ________________________________________________________________________________
 8.instala mongoose con (npm i mongoose) en la consola
 9.crea la configuracion de la base de datos usando mongoose (config/mongo.config.js) - OJO: Ver la configuracion en la pagina oficial
 10.invoca la configuracion de la base de datos en el archivo index.js
+11.crear las carpetas dentro de la carpeta src
+ -config
+ -controller
+ -model
+ -routes
+ -services
 ____________________________________________________________________________________________
+<!-- CONFIGORACION DE MONGOOSE DENTRO DE LA CARPETA CONFIG -->
+import mongoose from 'mongoose';
+
+const MONGO_URI = 'aqui se pone la ruta que genera mongoose en la base de datos';
+
+const dbconeccion = async () => {
+
+try{
+await mongoose.connect(MONGO_URI,{});
+      console.log('Base de datos conectada exitosamente')
+}
+catch (error){
+    console.error(error);
+    console.error('Error al iniciar la base de datos :C')
+};
+}
+
+export default dbconeccion;
+____________________________________________________________________________________________
+
 <!-- LISTA DE DESEOS -->
 1.aprender sobre licencias
 2.aprender expreciones regulares
