@@ -54,6 +54,7 @@ ________________________________________________________________________________
   cd mi-proyecto
 3.inicializa un proyecto usando npm (dentro del directorio del proyecto)
   npm init 
+  3a. Revisar el package.json y verificar si aparece la propiedad "type" y ponerle el valor de "module"
 4.inicializar git (seguimiento a los cambios)
    git init
 5.agregar archivo .gitignore (lista negra: archivos que NO se van a subir a GitHub)
@@ -68,6 +69,12 @@ ________________________________________________________________________________
  -model
  -routes
  -services
+ 12.ir al package.json y en el objeto scripts y poner:
+ scripts{"dev": "dev:node --env-file .env --watch ./src/index.js"}
+ 13.despues de la creacion de crod se deben de crear las siguientes carpetas
+ -helprs
+ -middlewares
+ 
 ____________________________________________________________________________________________
 <!-- CONFIGORACION DE MONGOOSE DENTRO DE LA CARPETA CONFIG -->
 import mongoose from 'mongoose';
@@ -87,6 +94,8 @@ catch (error){
 }
 
 export default dbconeccion;
+/////////////////////////////////////////////////////////////////////////
+BASE DE TADOS REMOTA GENERADA EN MONGO ATLAS:mongodb+srv://davidarana713:<db_passwordAQUI SE PONE LA CONTRASEÑA CREADA EN EL USER DEL MONGO ATLAS>@cluster0.ebzuws4.mongodb.net/
 ____________________________________________________________________________________________
 
 <!-- LISTA DE DESEOS -->
