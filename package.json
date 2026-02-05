@@ -1,5 +1,24 @@
 {
+  "name": "cuardeno",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/davidarana713/CUADERNO#readme",
+  "bugs": {
+    "url": "https://github.com/davidarana713/CUADERNO/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidarana713/CUADERNO.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "pruevas.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "prompt-sync": "^4.2.0"
-  }
+  },
+  "devDependencies": {}
 }
