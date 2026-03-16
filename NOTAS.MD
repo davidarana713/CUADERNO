@@ -305,21 +305,51 @@ ________________________________________________________________________________
 5.se abre el visual y se inicializa el proyecto poniendo en la terminal:(ng s -o)
 6.lugo en la carpeta src/
 app.html: se debe de borrar todo lo del archico y solo dejar <router-oulet>
-7.luego en la terminal para generala el header se pone:( ng g c shared/layout/header --skip-tests)
+7.luego en la terminal para generala el header se pone:(            )
 se debe de tener en cuenta que todo lo que se ponga en la carpeta SHARED sera lo que se compartira en todas las paginas del proyecto 
 8.luego en la terminal para generala el header se pone:( ng g c shared/layout/footer --skip-tests)se debe de tener en cuenta que todo lo que se ponga en la carpeta SHARED sera lo que se compartira en todas las paginas del proyecto      
-9.luego se llman en el app.html como se ven el ts de cada uno (header y footer)
-9.Se deven de llamar en app.ts en la parte de @Component({imports: [RouterOutlet,Header,Footer]})
-10.luego se crea en pages:(login,home,registe) con el siguienete comando en la terminal (ng g c shared/pages/register --skip-tests)
-11.despues en el app.routes se impotan los componentes creados:(Home,Login,Register)
-12.Despues dentro de :export const routes: Routes = [aqui se ponen las rutas de las siguiente manera:{path: 'home', component:Home},
-{path: 'login', component:Login} y no olvidar que las redireciones e ponen al final de la siguiente manera {path: '', redirectTo: 'home',pathMatch:'full'}]  
-13.se debe de probar las para saber que funcionan correctamente antes de continuar las rutas se pruevan                
+9.luego se llaman en el app.html como se ven el  archivo ts en el apartado
+@Component({
+  selector: 'app-header',
+})
+
+ de cada uno header y footer
+
+9.Se deven de llamar en app.ts de la siguiente manera
+import { Header } from './shared/layout/header/header';
+import { Footer } from './shared/layout/footer/footer';
+
+
+@Component({
+    imports: [RouterOutlet,Header,Footer]
+    })
+
+10.luego se crean las paginas unicas  en pages:(login,home,register,etc...) con el siguienete comando en la terminal (ng g c shared/pages/register --skip-tests)
+
+11.despues en el app.routes se impotan los componentes creados:(login,home,register,etc...) de la siguiente manera:
+import { Home } from './shared/pages/home/home';
+import { Login } from './shared/pages/login/login';
+import { Register } from './shared/pages/register/register';
+
+Despues se deben de llamar los componentes dentro de :
+export const routes: Routes = [
+{path: 'home', component:Home},
+{path: 'login', component:Login}  
+no olvidar que las redireciones e ponen al final de la siguiente manera 
+{path: '', redirectTo: 'home',pathMatch:'full'},
+{path: '**', redirectTo: 'home', pathMatch:'full'}]
+
+12.se debe de probar las rutas para saber que funcionan correctamente antes de continuar 
+____________________________________________________________________________________________
+<!-- COMO ALIAR LOS FORMULARIOS DE FRONTED CON EL BAKEND -->
+1.Se debe de aliar el html y el ts dek componente
 _____________________________________________________________________________________________
 <!-- NOTAS SOBRE FRONTED -->
 1.ng serve -o:(CON ESTO SE INICIALIZA EL PROYECTO)
 2.se debe de tener en cuenta que todo lo que se ponga en la carpeta SHARED sera lo que se compartira en todas las paginas del proyecto
 3.se debe de tener en cuenta que todo lo que se ponga en la carpeta PAGES sera lo que se de uso independiente y solo se usara en el proposito deseado 
+4.con el siguiente comando (ng g c shared/layout/footer --skip-tests) en la terminal se crean los componentes que desen crear y se debe de tener en cuenta que segun como se pongan los (/) se creara el componente en sierta carpeta 
+5.comando de la terminal para crear un service para conectara al backend(ng g s core/services/http-register --skip-tests )
 ____________________________________________________________________________________________
 
 <!-- LISTA DE DESEOS -->
